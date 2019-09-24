@@ -1,0 +1,24 @@
+<p>Number of coin flips : {{toss.count}}</p>
+<!--<p>{{toss.result}}</p>-->
+
+
+
+<div *ngIf="toss.result== false ">
+  <img width="150" src = "assets/img/tail.png">
+</div>
+
+<div *ngIf="toss.result== true ">
+  <img width="150" src = "assets/img/head.png">
+</div>
+
+
+<ul>
+  <li *ngFor="let header of headers">
+    {{ header }}
+  </li>
+</ul>
+
+
+<!--<tr *ngFor="let header of headers">-->
+<!--  <td>{{header}}</td>-->
+<!--</tr>-->
